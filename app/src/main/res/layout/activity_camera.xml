@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillViewport="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        tools:context=".camera">
+
+        <TextView
+            android:id="@+id/CameraNameOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/bg_list_name"
+            android:textStyle="bold"
+            android:text="@string/Image_Classification"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <RelativeLayout
+            android:id="@+id/ImageRelate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/CameraNameOutput"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/bg_list">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView"
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:padding="5dp"
+                android:src="@drawable/veg_img_lett"
+                app:shapeAppearanceOverlay="@style/CameraCornerRounded"
+                android:contentDescription="TODO" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/classified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageRelate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10sp"
+            android:text="CLASSIFIED AS:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="#C30000"
+            android:textStyle="bold"
+            android:textSize="27sp"
+            android:id="@+id/result"
+            android:layout_below="@+id/classified" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_BTN"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/result"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#D3D3D3">
+
+            <Button
+                android:id="@+id/button_camera"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/ic_camera"
+                android:elevation="5dp"
+                android:textAllCaps="true"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button_gallery"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_gallery"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_gallery"
+                android:textAllCaps="true"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/button_camera"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--            <Button-->
+            <!--                android:layout_width="200dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:background="@drawable/btn_round"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/Show_Comp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/const_BTN"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_round"
+
+            android:text="SHOW COMPANION" />
+
+    </RelativeLayout>
+</ScrollView>

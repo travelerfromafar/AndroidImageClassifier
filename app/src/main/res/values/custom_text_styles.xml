@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.AppTheme.TextInputLayout.FilledBox.Dense" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="hintTextColor">@color/white</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="colorControlActivated">@color/teal_200</item>
+    </style>
+</resources>

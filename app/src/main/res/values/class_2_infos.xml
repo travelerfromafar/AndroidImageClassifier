@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="class_2_test_1">
+        <item>Basil</item>
+        <item>Chives</item>
+        <item>Garlic</item>
+        <item>Parsley</item>
+        <item>Squash</item>
+    </string-array>
+
+    <string-array name="class_2_test_1_spacing">
+        <item>12 – 16 inches</item>
+        <item>6 – 12 inches</item>
+        <item>6 – 8 inches</item>
+        <item>1 – 2 inches</item>
+        <item>4 ft</item>
+    </string-array>
+
+
+    <string-array name="class_2_test_2">
+        <item>T2 Basil</item>
+        <item>T2 Chives</item>
+        <item>T2 Garlic</item>
+        <item>T2 Parsley</item>
+        <item>T2 Squash</item>
+    </string-array>
+
+    <string-array name="class_2_test_2_spacing">
+        <item>T2 inches</item>
+        <item>T2 inches</item>
+        <item>T2 inches</item>
+        <item>T2 inches</item>
+        <item>T2 ft</item>
+    </string-array>
+
+
+    <string-array name="class_2_test_3">
+        <item>T3 Basil</item>
+        <item>T3 Chives</item>
+        <item>T3 Garlic</item>
+        <item>T3 Parsley</item>
+        <item>T3 Squash</item>
+    </string-array>
+
+    <string-array name="class_2_test_3_spacing">
+        <item>T3 inches</item>
+        <item>T3 inches</item>
+        <item>T3 inches</item>
+        <item>T3 inches</item>
+        <item>T3 ft</item>
+    </string-array>
+
+
+    <string-array name="class_2_test_4">
+        <item>T4 Basil</item>
+        <item>T4 Chives</item>
+        <item>T4 Garlic</item>
+        <item>T4 Parsley</item>
+        <item>T4 Squash</item>
+    </string-array>
+
+    <string-array name="class_2_test_4_spacing">
+        <item>T4 inches</item>
+        <item>T4 inches</item>
+        <item>T4 inches</item>
+        <item>T4 inches</item>
+        <item>T4 ft</item>
+    </string-array>
+
+
+    <string-array name="class_2_test_5">
+        <item>T5 Basil</item>
+        <item>T5 Chives</item>
+        <item>T5 Garlic</item>
+        <item>T5 Parsley</item>
+        <item>T5 Squash</item>
+    </string-array>
+
+    <string-array name="class_2_test_5_spacing">
+        <item>T5 inches</item>
+        <item>T5 inches</item>
+        <item>T5 inches</item>
+        <item>T5 inches</item>
+        <item>T5 ft</item>
+    </string-array>
+
+
+</resources>

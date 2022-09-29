@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/til_customer"-->
+<!--        style="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"-->
+<!--        android:theme="@style/CursorColor"-->
+<!--        android:layout_width="400dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="5dp"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginEnd="5dp"-->
+<!--        android:layout_marginRight="5dp"-->
+<!--        android:layout_below="@id/const_logreg"-->
+<!--        android:padding="3dp"-->
+<!--        app:boxStrokeWidth="0dp"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        app:passwordToggleEnabled="true"-->
+<!--        app:passwordToggleTint="@color/white"-->
+<!--        android:background="@drawable/bg_list_name"-->
+<!--        android:backgroundTint="#333">-->
+
+<!--        &lt;!&ndash;android:maxLength="13"&ndash;&gt;-->
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/et_customer"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Customer No"-->
+<!--            app:passwordToggleTint="@color/white"-->
+<!--            android:inputType="textPassword"/>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+    <TextView
+        android:id="@+id/AboutName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:background="@drawable/bg_list_name"
+        android:textStyle="bold"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageVD"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/app_name"
+        android:text="@string/SymBio"
+        android:textColor="#333" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_logreg"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageVD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dp">
+
+<!--        <EditText-->
+<!--            android:id="@+id/email_in"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:background="@drawable/bg_list_name"-->
+<!--            android:backgroundTint="#333"-->
+<!--            android:hint="@string/email"-->
+<!--            android:padding="15dp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+            android:theme="@style/CursorColor"
+            android:id="@+id/email_inLY"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/const_logreg"
+            android:padding="3dp"
+            android:layout_margin="10dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            android:backgroundTint="#333">
+
+            <!--android:maxLength="13"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_list_name"
+                android:backgroundTint="#333"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.AppTheme.TextInputLayout.FilledBox.Dense"
+            android:theme="@style/CursorColor"
+            android:id="@+id/pass_inLY"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:layout_constraintTop_toBottomOf="@id/email_inLY"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_below="@id/const_logreg"
+            android:padding="3dp"
+            android:layout_margin="10dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/white"
+            android:textColorHint="@color/white"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white"
+            android:backgroundTint="#333">
+
+            <!--android:maxLength="13"-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass_in"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_list_name"
+                android:backgroundTint="#333"
+                android:hint="@string/pass"
+                android:textColor="@color/white"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+<!--        <EditText-->
+<!--            android:id="@+id/pass_in"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/email_in"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:background="@drawable/bg_list_name"-->
+<!--            android:backgroundTint="#333"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:padding="15dp"-->
+<!--            android:hint="@string/pass"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:drawableRight="@drawable/ic_eye_showps"-->
+<!--            android:longClickable="false"-->
+<!--            />-->
+
+        <Button
+            android:id="@+id/Reg_Comp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_round"
+            android:text="@string/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/Log_Comp"
+            app:layout_constraintTop_toBottomOf="@id/pass_inLY" />
+
+        <Button
+            android:id="@+id/Log_Comp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/btn_round"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/button_color_background"
+            app:layout_constraintEnd_toStartOf="@id/Reg_Comp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pass_inLY" />
+
+        <Button
+            android:id="@+id/Forget_Comp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="3dp"
+            android:background="@android:color/transparent"
+            android:text="@string/forget"
+            android:textAllCaps="false"
+            android:textColor="#333"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Reg_Comp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </RelativeLayout>

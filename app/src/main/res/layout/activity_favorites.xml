@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vegetable.ListOfVegetables"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/ListName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:background="@drawable/bg_list_name"
+            android:textStyle="bold"
+            android:text="FAVORITES"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/NotLoggedIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="CurUser" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerFav"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ListName"
+            android:layout_marginTop="30dp"
+            android:overScrollMode="never"
+            app:layout_constraintStart_toStartOf="parent" />
+        <!--        <ListView-->
+        <!--            android:id="@+id/listview"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_below="@id/SearchList"-->
+        <!--            android:divider="@null"-->
+        <!--            android:dividerHeight="0dp"-->
+        <!--            tools:listitem="@layout/item_list_layout" />-->
+
+    </RelativeLayout>
+
+</LinearLayout>

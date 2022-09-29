@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">SYMBIOPIC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    //fragment Text
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Carrot">Carrot</string>
+    <string name="Benefits">BENEFICIAL</string>
+    <string name="Harmful">HARMFUL</string>
+    <string name="Info">DETAILS</string>
+
+    //App name
+    <string name="SymBio">Symbio</string>
+    <string name="Pic">Pic</string>
+
+    //About
+    <string name="About">ABOUT</string>
+    <string name="AboutDesc">An increasing number of organic gardeners are seeking for natural solutions to create a flourishing garden without using pesticides or other chemicals that are harmful to ourselves and our environment. Companion planting may help you create a healthy ecosystem that operates organically and gives balance to your entire garden, all while bringing beauty and harmony to your surrounds.</string>
+
+    //Camera
+    <string name="Image_Classification">IMAGE CLASSIFICATION</string>
+
+    //LoginRegister
+    <string name="registration">REGISTER USER</string>
+    <string name="logged">LOG</string>
+    <string name="login">LOGIN</string>
+    <string name="register">REGISTER</string>
+    <string name="forget">forget password?</string>
+    <string name="fname">name</string>
+    <string name="uname">username</string>
+    <string name="pass">password</string>
+    <string name="email">email</string>
+
+    //Vegetable names
+    <string name="Spinach">Spinach</string>
+
+    //Vegetables classes
+    <string name="green">Green</string>
+    <string name="leaves">Leaves</string>
+    <string name="water">Water</string>
+    <string name="fire">Fire</string>
+    <string name="All">All</string>
+
+    //Vegetable List
+    <string name="Vegetable">VEGETABLES</string>
+
+    <string-array name="vegeTableList">
+        <item>Bitter</item>
+        <item>Cabbage</item>
+        <item>Chili</item>
+        <item>Eggplant</item>
+        <item>Ginger</item>
+        <item>Lettuce</item>
+        <item>Onion</item>
+        <item>Pechay</item>
+        <item>Sweet Potato</item>
+        <item>Tomato</item>
+    </string-array>
+
+    <string-array name="vegeTableClass">
+        <item>class_2</item>
+        <item>class_1</item>
+        <item>class_1</item>
+        <item>class_2</item>
+        <item>class_1</item>
+        <item>class_2</item>
+        <item>class_2</item>
+        <item>class_1</item>
+        <item>class_2</item>
+        <item>class_2</item>
+    </string-array>
+
+    //Vegetable Recog
+    <string-array name="VegRecog">
+        <item>Bitter</item>
+        <item>Cabbage</item>
+        <item>Chili</item>
+        <item>Eggplant</item>
+        <item>Ginger</item>
+        <item>Lettuce</item>
+        <item>Onion</item>
+        <item>Bokchoy</item>
+        <item>Sweet Potato</item>
+        <item>Tomato</item>
+    </string-array>
+
+
+    // Not Available Data
+    <string-array name="no_available_data">
+        <item>Not Applicable</item>
+        <item>Not Applicable</item>
+    </string-array>
+
+    <string-array name="no_available_data_spacing">
+        <item>Not Applicable</item>
+        <item>Not Applicable</item>
+    </string-array>
+
+
+    <style name="BottomNavigationView.Active" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+</resources>
